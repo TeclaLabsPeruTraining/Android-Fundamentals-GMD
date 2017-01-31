@@ -1,9 +1,7 @@
 # Android-Fundamentals-GMD
 Android Fundamentals (23h)
 
-Temario 
-
-"Android Fundamentals
+Temario : 
 
 - Composición de un proyecto (Carpetas, paquetes, librerías, tipos de archivos, etc).
 - Android Studio
