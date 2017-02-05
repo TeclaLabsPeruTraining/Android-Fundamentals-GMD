@@ -35,6 +35,6 @@ Temario :
 - Ejercicios
 "Material Design
 ◦ Introducción a Material Design"
-Presentación de Proyectos I - Martes 21 de Febrero
+◦ Presentación de Proyectos I - Martes 21 de Febrero
 
 Conformación de grupos: https://docs.google.com/spreadsheets/d/1Bq5LFvwFDCbEAK63gb3vh5SGy6ft6jR6KSmrCYA7dbU/edit?usp=sharing
