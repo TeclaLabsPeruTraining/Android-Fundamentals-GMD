@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GMDAppTemplate</string>
+    <string name="first">Primera Actividad</string>
+    <string name="second">Segunda Actividad</string>
+    <string name="third">Tercera Actividad</string>
+    <string name="fourth">Cuarta Actividad</string>
+</resources>
