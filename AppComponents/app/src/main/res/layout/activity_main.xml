@@ -10,10 +10,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.gmd.lessons.MainActivity">
 
-    <Button
-        android:layout_width="200dp"
-        android:layout_height="300dp"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
         android:text="WIFI"
-        android:id="@+id/btnStatus"/>
+        android:id="@+id/vStatus"/>
 </RelativeLayout>

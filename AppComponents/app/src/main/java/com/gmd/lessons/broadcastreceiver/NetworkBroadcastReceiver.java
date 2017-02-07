@@ -19,6 +19,10 @@ public class NetworkBroadcastReceiver extends BroadcastReceiver {
         this.networkListener = networkListener;
     }
 
+    public NetworkListener getNetworkListener() {
+        return networkListener;
+    }
+
     @Override
     public void onReceive(Context context, Intent intent) {
 
@@ -26,15 +30,15 @@ public class NetworkBroadcastReceiver extends BroadcastReceiver {
 
             NetworkInfo networkInfo = intent.getParcelableExtra(ConnectivityManager.EXTRA_NETWORK_INFO);
             if (networkInfo != null && networkInfo.getDetailedState() == NetworkInfo.DetailedState.CONNECTED) {
-                Log.d("Network", "WIFI ON");
-                if(networkListener!=null){
-                    networkListener.wifiOn();
+                Log.d("Network", "WIFI ON "+getNetworkListener());
+                if(getNetworkListener()!=null){
+                    getNetworkListener().wifiOn();
                 }
 
             } else if (networkInfo != null && networkInfo.getDetailedState() == NetworkInfo.DetailedState.DISCONNECTED) {
-                Log.d("Network", "WIFI OFF");
-                if(networkListener!=null){
-                    networkListener.wifiOff();
+                Log.d("Network", "WIFI OFF "+getNetworkListener());
+                if(getNetworkListener()!=null){
+                    getNetworkListener().wifiOff();
                 }
             }
         }
