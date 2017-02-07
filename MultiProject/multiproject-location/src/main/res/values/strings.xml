@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Multiproject-location</string>
+    <string name="locationFragmentLandingMessage">Este fragmento se encuentra en el módulo multiproject-location. Dale +1!!!</string>
+</resources>

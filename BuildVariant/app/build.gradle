@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    defaultConfig {
+        applicationId "com.johnson.pablo.buildvariant"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'buildvariantkey'
+            keyPassword 'buildvariant123'
+            storeFile file('/Users/Pablo/Documents/workspace/Github/AndroidStudio/BuildVariant/BuildVariantKey.jks')
+            storePassword 'buildvariant123'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            debuggable true
+        }
+    }
+
+    productFlavors {
+        demo {
+            applicationId "com.johnson.pablo.buildvariant.demo"
+            versionName "1.0-demo"
+        }
+        full {
+            applicationId "com.johnson.pablo.buildvariant.full"
+            versionName "1.0-full"
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.android.support:design:23.1.0'
+}

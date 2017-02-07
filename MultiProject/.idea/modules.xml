@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MultiProject.iml" filepath="$PROJECT_DIR$/MultiProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multiproject-app/multiproject-app.iml" filepath="$PROJECT_DIR$/multiproject-app/multiproject-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multiproject-core/multiproject-core.iml" filepath="$PROJECT_DIR$/multiproject-core/multiproject-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multiproject-location/multiproject-location.iml" filepath="$PROJECT_DIR$/multiproject-location/multiproject-location.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multiproject-payment/multiproject-payment.iml" filepath="$PROJECT_DIR$/multiproject-payment/multiproject-payment.iml" />
+    </modules>
+  </component>
+</project>

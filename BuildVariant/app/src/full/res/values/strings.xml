@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Build Variant Full</string>
+    <string name="nameHintText">Ingresar el nombre</string>
+    <string name="lastNameHint">Ingresar el apellido</string>
+    <string name="nameLabel">Nombre:</string>
+    <string name="lastnameLabel">Apellido:</string>
+    <string name="phoneLabel">Celular:</string>
+    <string name="phoneHint">987654321</string>
+    <string name="SecondActivityLabel">Registro Full</string>
+    <string name="MainActivityLabel">Full App</string>
+    <string name="emailLabel">Email:</string>
+    <string name="registerMenuTitle">Registrar</string>
+    <string name="thanksMessage">Gracias por registrate.</string>
+    <string name="landingMessage">Esta es una aplicación simple para demostrar el uso de flavors y build types.</string>
+</resources>

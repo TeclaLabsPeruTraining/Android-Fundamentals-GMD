@@ -1,0 +1,1 @@
+include ':multiproject-location', ':multiproject-core', ':multiproject-payment', ':multiproject-app'

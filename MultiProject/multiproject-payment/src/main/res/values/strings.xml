@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MultiProject-payment</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="paymentFragmentMessage">Este fragmento se encuentra en el módulo multiproject-payment.</string>
+</resources>
