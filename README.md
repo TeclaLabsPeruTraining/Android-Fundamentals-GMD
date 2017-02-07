@@ -83,23 +83,208 @@ Gradle y el plugin de Android para Gradle permiten configurar los siguientes asp
 
  - **Tipos de compilación:**
  Los tipos de compilación definen propiedades que Gradle utiliza al momento de compilar y empaquetar la aplicación. Por defecto, Android Studio define dos tipos: Debug y Release.
+ 
  - **Tipos de producto:**
- - **Variantes de compilación:**
+ Estos representan las diferentes versiones de la aplicación que pueden ser publicadas para los usuarios como por ejemplo una versión demo y full o versión gratis y paga. Los tipos de producto son opcionales y deben ser creados manualmente.
+ 
+ - **Variantes de compilación:** 
+ Una variante de compilación es la unión de un tipo de compilación y un tipo de producto, y será la configuración que Gradle usará para compilar la aplicación. Las variantes de compilación se crean dinámicamente conforme se vayan creando tipos de compilación y tipos de producto.
  - **Entradas del Manifiesto:**
+ Se puede especificar valores para algunas propiedades del manifest en la configuración de la variante de compilación y estos sobreescribiran los existentes en el manifest. Esto puede ser útil cuando se desea generar distintos APKs con nombres diferentes, minimo SDK o versión SDK de destino.
  - **Dependencias:**
+ Gradle es capaz de administrar las dependencias del proyecto desde un repositorio local o remoto.
  - **Firma:**
- - **Proguard:**
- - **Divisiones de APK:**
+ Gradle permite especificar configuraciones de firmas en la configuración de la compilación y puede firmar el APK automáticamente
+ - **Proguard:** Gradle permite crear un archivo de configuración para proguard diferente para cada variante de compilación.
 
-###Archivo de configuracion de Gradle
+###Archivos de configuración de la compilación
+Para crear configuraciones de compilación personalizadas se debe realizar cambios en uno o mas archivos de configuración de compilación y en los build.gradle.
+Al iniciar un nuevo proyecto, Android Studio crear de manera automática algunos de esos archivos como se muestra en la siguiente imagen.
+![Project Structure](https://github.com/TeclaLabsPeruTraining/Android-Fundamentals-GMD/blob/lesson1/images/project-structure.png)
 
-###Archivo de configuración de nivel superior
+Hay algunos archivos de configuración de compilación que forman parte de la estructura estándar de un proyecto. A continuación veremos el alcance y objetivo de cada uno de ellos:
 
-###Archivo de configuración de nivel de módulo
+####Archivo de configuración de Gradle
+Es el archivo **settings.gradle**, está ubicado en la raíz del proyecto e indica a Gradle los módulos que debe incluir al momento de compilar el proyecto.
 
-###Archivo de propiedades de Gradle
+    include ‘:app’
 
+ 
+####Archivo de configuración de nivel superior
+Es el archivo **build.gradle** y está ubicado en la raíz del proyecto. En el se definen las configuraciones de compilación que se aplican a todos los módulos de proyecto.
 
+```java
+/**
+ * El bloque buildscript{} es donde se configura los repositorios y 
+ * dependencias para el mismo Gradle. No se debería incluir las 
+ * dependencias para los módulos aquí.
+ * Por ejemplo, en este bloque se incluye la dependencia del 
+ * plugin de Android para Gradle ya que este provee instrucciones 
+ * adicionales que Gradle necesita para compilar los módulos Android.
+ */
+
+buildscript {
+
+    /**
+     * El bloque repositories {} es donde se configuran los repositorios 
+     * en donde Gradle busca o descarga las dependencias.
+     * El siguiente código define JCenter como el repositorio en donde 
+     * Gradle deberá buscar ss dependencias.
+     */
+
+    repositories {
+        jcenter()
+    }
+
+    /**
+     * El bloque dependencies {} block configura las dependencias que 
+     * Gradle necesita para compilar el proyecto. La siguiente linea 
+     * agrega el plugin de Android para Gradle versión 2.2.0 como una 
+     * dependencia
+     */
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.0'
+    }
+}
+
+/**
+ * El bloque allprojects {} es donde se configuran los repositorios y 
+ * dependencias usados por todos los modulos en el proyecto, tales como 
+ * `third-party`, plugins o  librerias. 
+ * Dependencias que no son necesarias por todos los módulos del proyecto 
+ * deben ser configuradas el los build.gradle a nivel de módulo.
+ */
+
+allprojects {
+   repositories {
+       jcenter()
+   }
+}
+
+```
+
+####Archivo de configuración de nivel de módulo
+
+```java
+
+/**
+ * La primera linea aplica el plugin de Android para Gradle
+ */
+
+apply plugin: 'com.android.application'
+
+/**
+ * El bloque android {}  es donde se configuran todas las opciones 
+ * relativas a Android.
+ */
+
+android {
+
+  /**
+   * compileSdkVersion especifica el nivel de API de Android que 
+   * Gradle para compilar la aplicación. Esto significa que la 
+   * aplicación puede usar funcionalidades del API incluidas en 
+   * esta API o en APIs menores
+   *
+   * buildToolsVersion especifica la version del SDK build tools, 
+   * utilidades de consola y compilador que Gradle utiliza para 
+   * construir la aplicación
+   */
+
+  compileSdkVersion 25
+  buildToolsVersion "25.0.0"
+
+  /**
+   * El bloque defaultConfig {} encapsula propiedades por defecto de 
+   * todas las variantes de compilación y puede sobreescribir algunos 
+   * atributos del main/AndroidManifest.xml dinamicamente.
+   */
+
+  defaultConfig {
+
+    /**
+     * applicationId identifica de manera única el paquete al momento de 
+     * publicar.
+     * Sin embargo, el código fuente deberá seguir referenciando 
+     * al paquete definido en main/AndroidManifest.xml file.
+     */
+
+    applicationId 'com.example.myapp'
+
+    // Define el nivel de API mínimo para correr la aplicación.
+    minSdkVersion 15
+
+    // Especifica el nivel de API usado para testear la aplicación.
+    targetSdkVersion 25
+
+    // Define el número de versión de la aplicación.
+    versionCode 1
+
+    // Define el nombre de versión de la aplicación.
+    versionName "1.0"
+  }
+
+  /**
+   * El bloque buildTypes {} es donde se puede configurar multiples 
+   * tipos de compilación.
+   * Por defecto, Gradle define dos tipos: debug y release. El tipo 
+   * de compilación debug no se muestra explícitamente y esta firmado 
+   * con la llave de debug por defecto. El tipo de compilación release 
+   * aplica configuración de Proguard y no está firmado por defecto.
+   */
+
+  buildTypes {
+
+    /**
+     * Por defecto, Android Studio configura el modo de compilación 
+     * release para hacer "shrink" del código y especifica el archivo 
+     * de configuración de Proguard.
+     */
+
+    release {
+        minifyEnabled true // Habilita el "shrink" del código.
+        proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+
+  /**
+   * El bloque productFlavors {} es donde se configura los diferentes 
+   * flavors. Esto permite crear versiones distintas de la aplicación 
+   * y pueden sobrreescribir el defaultConfig {} con sus propias 
+   * configuraciones. 
+   * Este ejemplo crea un flavor free y paid. Cada flavor especifica su 
+   * propio application ID, de esta manera pueden existir en el Google 
+   * Play Store o en el dispositivo Android de manera simultánea.
+   */
+
+  productFlavors {
+    free {
+      applicationId 'com.example.myapp.free'
+    }
+
+    paid {
+      applicationId 'com.example.myapp.paid'
+    }
+  }
+
+/**
+ * El bloque de dependencies {} solo especifica dependencias 
+ * necesitadas para compilar el mismo módulo.
+ */
+
+dependencies {
+    compile project(":lib")
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+```
+####Archivo de propiedades de Gradle
+Se ubican en el directorio raíz del proyecto.
+
+ - gradle.properties: Dentro de este archivo se puede configurar ajustes de gradle para todo el proyecto como por ejemplo el tamaño máximo del daemon de Gradle.
+ - local.properties: Dentro se configura propiedades del entorno local para el sistema de compilación como por ejemplo la ruta del SDK. Este archivo no debe ser incluido en el sistema de control de versión.
 
 ##Referencias
 
