@@ -1,7 +1,7 @@
 # Android-Fundamentals-GMD
 Android Fundamentals (23h)
 
-## Lesson3 : Layout y Widgets (4)
+## Lesson3 : Layout y Widgets (4h)
 
 ### Temas :
 
