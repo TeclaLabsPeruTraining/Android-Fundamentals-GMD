@@ -170,10 +170,10 @@ Padding
 
 [linearlayouthorzsample]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_horz_sample.png
 
-<style>
-    .classname{
+
+.classname{
         width: 200px;
     }
-</style>
+
 
 
