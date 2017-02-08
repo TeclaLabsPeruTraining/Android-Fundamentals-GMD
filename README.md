@@ -78,7 +78,7 @@ Android Fundamentals (23h)
 
 ## Referencias
 
-- Android Manifest [https://developer.android.com/guide/topics/manifest/manifest-intro.html?hl=es](https://developer.android.com/guide/topics/manifest/manifest-intro.html?hl=es
+- Android Manifest [https://developer.android.com/guide/topics/manifest/manifest-intro.html?hl=es](https://developer.android.com/guide/topics/manifest/manifest-intro.html?hl=es)
 
 - Activity [https://developer.android.com/guide/components/activities/index.html](https://developer.android.com/guide/components/activities/index.html)
 
