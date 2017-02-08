@@ -13,33 +13,34 @@ import android.util.Log;
 
 public class NetworkBroadcastReceiver extends BroadcastReceiver {
 
-    private NetworkListener networkListener;
+    private static final String TAG ="NetworkBroadcast";
+    private final String INTENT_NAME= "NETWORK.WIFI";
 
-    public void setNetworkListener(NetworkListener networkListener) {
-        this.networkListener = networkListener;
-    }
+    private final int STATUS_ON=1;
+    private final int STATUS_OFF=0;
 
-    public NetworkListener getNetworkListener() {
-        return networkListener;
-    }
 
     @Override
     public void onReceive(Context context, Intent intent) {
+
+         Intent mIntent = new Intent(INTENT_NAME);
 
         if (intent.getAction().equals(ConnectivityManager.CONNECTIVITY_ACTION)) {
 
             NetworkInfo networkInfo = intent.getParcelableExtra(ConnectivityManager.EXTRA_NETWORK_INFO);
             if (networkInfo != null && networkInfo.getDetailedState() == NetworkInfo.DetailedState.CONNECTED) {
-                Log.d("Network", "WIFI ON "+getNetworkListener());
-                if(getNetworkListener()!=null){
-                    getNetworkListener().wifiOn();
-                }
+                Log.v(TAG, "WIFI ON ");
+
+                mIntent.putExtra("STATUS", STATUS_ON);
+                context.sendBroadcast(mIntent);
+
 
             } else if (networkInfo != null && networkInfo.getDetailedState() == NetworkInfo.DetailedState.DISCONNECTED) {
-                Log.d("Network", "WIFI OFF "+getNetworkListener());
-                if(getNetworkListener()!=null){
-                    getNetworkListener().wifiOff();
-                }
+                Log.v(TAG, "WIFI OFF ");
+
+                mIntent.putExtra("STATUS", STATUS_OFF);
+                context.sendBroadcast(mIntent);
+
             }
         }
     }

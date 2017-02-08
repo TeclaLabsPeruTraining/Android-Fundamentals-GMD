@@ -1,20 +1,25 @@
 package com.gmd.lessons;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Color;
 import android.net.wifi.WifiManager;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 
-import com.gmd.lessons.broadcastreceiver.NetworkBroadcastReceiver;
-import com.gmd.lessons.broadcastreceiver.NetworkListener;
 
-public class MainActivity extends AppCompatActivity implements NetworkListener {
+public class MainActivity extends AppCompatActivity  {
 
-    private NetworkBroadcastReceiver networkBroadcastReceiver;
+    private static final String TAG = "MainActivity";
+    private final String INTENT_NAME= "NETWORK.WIFI";
+    private final int STATUS_ON=1;
+    private final int STATUS_OFF=0;
+
+    private BroadcastReceiver mIntentReceiver;
     private View vStatus;
 
     @Override
@@ -23,12 +28,25 @@ public class MainActivity extends AppCompatActivity implements NetworkListener {
         setContentView(R.layout.activity_main);
         ui();
 
-        IntentFilter intentFilter = new IntentFilter();
-        intentFilter.addAction(WifiManager.SUPPLICANT_CONNECTION_CHANGE_ACTION);
 
-        networkBroadcastReceiver= new NetworkBroadcastReceiver();
-        networkBroadcastReceiver.setNetworkListener(this);
-        registerReceiver(networkBroadcastReceiver,intentFilter);
+        mIntentReceiver= new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                int status  = intent.getIntExtra("STATUS",-1);
+                Log.v(TAG, "status "+status);
+
+                if(status==STATUS_ON){
+                    wifiOn();
+                }else if(status== STATUS_OFF){
+                    wifiOff();
+                }
+
+            }
+        };
+
+        IntentFilter intentFilter = new IntentFilter(INTENT_NAME);
+        intentFilter.addAction(WifiManager.SUPPLICANT_CONNECTION_CHANGE_ACTION);
+        registerReceiver(mIntentReceiver,intentFilter);
     }
 
     private void ui() {
@@ -38,6 +56,7 @@ public class MainActivity extends AppCompatActivity implements NetworkListener {
     @Override
     protected void onResume() {
         super.onResume();
+
     }
 
     @Override
@@ -49,18 +68,20 @@ public class MainActivity extends AppCompatActivity implements NetworkListener {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if(networkBroadcastReceiver!=null){
-            unregisterReceiver(networkBroadcastReceiver);
+        if(mIntentReceiver!=null){
+            unregisterReceiver(mIntentReceiver);
         }
     }
 
-    @Override
+
     public void wifiOn() {
         vStatus.setBackgroundColor(Color.parseColor("#C0CA33"));
     }
 
-    @Override
+
     public void wifiOff() {
         vStatus.setBackgroundColor(Color.parseColor("#FF1744"));
     }
+
+
 }
