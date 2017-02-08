@@ -76,18 +76,18 @@ Fundamentos
 
 Margin
 
-<img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/boxmodel_margin.png" height="480">
+<img src="../images/boxmodel_margin.png" height="480">
 
 Padding
 
-<img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/boxmodel_padding.png" height="480">
+<img src="../images/boxmodel_padding.png" height="480">
 
 
 ### 2. Controles más comunes (TextView, EditView, ImageView, Button, etc )
 
 - Input Controls [https://developer.android.com/guide/topics/ui/controls.html](https://developer.android.com/guide/topics/ui/controls.html)
 
-<img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/widgets.png" height="480">
+<img src="./images/widgets.png" height="480">
 
 - Material Components [https://material.io/guidelines/components/bottom-navigation.html](https://material.io/guidelines/components/bottom-navigation.html)
 
