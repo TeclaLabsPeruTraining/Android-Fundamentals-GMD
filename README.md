@@ -98,7 +98,7 @@ Padding
   
 - LinearLayout
     
-  ![img][linearlayout]{:width="36px"}
+  ![img][linearlayout]
   
 - RelativeLayout
     
@@ -170,4 +170,7 @@ Padding
 
 [linearlayouthorzsample]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_horz_sample.png
 
+[linearlayout_weight_ver_sample]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_weight_ver_sample.png
+
+[linearlayout_weight_hor_sample.png]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_weight_hor_sample.png
 
