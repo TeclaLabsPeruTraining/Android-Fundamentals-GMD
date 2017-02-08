@@ -98,7 +98,7 @@ Padding
   
 - LinearLayout
     
-    <img src="[path]linearlayout.png" height="480">
+  ![linearlayout][]
 
 - RelativeLayout
     
@@ -156,3 +156,4 @@ Padding
 - [http://android.inspired-ui.com/](http://android.inspired-ui.com/)
 
 [path]:images/
+[linearlayout]:https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout.png height=480px
