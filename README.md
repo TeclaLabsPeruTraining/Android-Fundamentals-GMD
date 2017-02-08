@@ -98,7 +98,7 @@ Padding
   
 - LinearLayout
     
-  ![linearlayout][]
+  ![linear layout][linealayout]
 
 - RelativeLayout
     
