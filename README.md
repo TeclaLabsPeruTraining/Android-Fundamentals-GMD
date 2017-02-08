@@ -54,14 +54,20 @@ Android Fundamentals (23h)
 ### 4. ¿Qué es un Intent y un Bundle?
 
 - Intent
-    
-    * Explicit Intent 
-    
-    Cuando la actividad objetivo es conocida.
 
-    * Implicit Intent
-    
-    Cuando la actividad objetivo no es conocida.
+  Un intent se utiliza para la siguientes acciones:
+  
+  * Iniciar un actividad
+  
+  * Iniciar un servicio
+  
+  * Enviar mensajes o acciones a otras apps.
+  
+  Tipos :
+  
+   * Intent explícitos - Cuando se conoce el componente a iniciar. Por ejemplo lanzar una actividad en una aplicación.
+   
+   * Intent Implícitos - Cuando no se conoce el componente a invocar, pero se puede enviar acciones. Por ejemplo si deseamos lanzar el navegador de dispositivo desde nuestra aplicación.
     
 - Bundle
 
