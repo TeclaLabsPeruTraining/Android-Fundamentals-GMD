@@ -98,7 +98,7 @@ Padding
   
 - LinearLayout
     
-  ![img][linearlayout].{classname}
+  ![img][linearlayout]{.classname}
   
 - RelativeLayout
     
