@@ -158,16 +158,16 @@ Padding
 
 [path]: images/
 
-[linearlayout]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout.png height="480px"
+[linearlayout]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout.png | width=100
 
-[relativelayout]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/relativelayout.png "height=480px"
+[relativelayout]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/relativelayout.png 
 
-[listview]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/listview.png "height=480px"
+[listview]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/listview.png
 
-[gridview]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/gridview.png "height=480px"
+[gridview]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/gridview.png
 
-[linearlayoutsample]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_sample.png "height=480px"
+[linearlayoutsample]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_sample.png
 
-[linearlayouthorzsample]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_horz_sample.png "height=480px"
+[linearlayouthorzsample]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_horz_sample.png
 
 
