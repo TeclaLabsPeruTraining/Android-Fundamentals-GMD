@@ -114,8 +114,8 @@ Padding
 
 - LinearLayout
   
-   <img src="./images/linearlayoutsample.png" height="480">
-   <img src="./images/linearlayouthorzsample.png" height="480">
+   <img src="./images/linearlayout_sample.png" height="480">
+   <img src="./images/linearlayout_horz_sample.png" height="480">
     
    <img src="./images/linearlayout_weight_ver_sample.png" height="480">
    <img src="./images/linearlayout_weight_hor_sample.png" height="480">
