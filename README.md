@@ -97,29 +97,28 @@ Padding
 
   
 - LinearLayout
-    
-  ![img][linearlayout]
+  
+  <img src="./images/linearlayout.png" height="480">
   
 - RelativeLayout
     
-  ![img][relativelayout]
+  <img src="./images/relativelayout.png" height="480">
          
 - Listview, GridView , RecyclerView
     
-  ![img][listview]
+   <img src="./images/listview.png" height="480">
   
-  ![img][gridview]
+   <img src="./images/gridview.png" height="480">
 
 ### Ejemplos
 
 - LinearLayout
-    
-  ![img][linearlayoutsample]
   
-  ![img][linearlayouthorzsample]
+   <img src="./images/linearlayoutsample.png" height="480">
+   <img src="./images/linearlayouthorzsample.png" height="480">
     
-    <img src="./images/linearlayout_weight_ver_sample.png" height="480">
-    <img src="./images/linearlayout_weight_hor_sample.png" height="480">
+   <img src="./images/linearlayout_weight_ver_sample.png" height="480">
+   <img src="./images/linearlayout_weight_hor_sample.png" height="480">
    
 - RelativeLayout 
 
@@ -127,7 +126,7 @@ Padding
 
 - Ejemplos de maquetación
     
-    <img src=".images/login_sample.png" height="480">
+    <img src="./images/login_sample.png" height="480">
     <img src="./images/login_sample_xml.png" height="480">
 
     <img src="./images/layout_sample1.png" height="480">
@@ -142,7 +141,6 @@ Padding
     <img src="./images/layout_sample7.png" height="480">
     <img src="./images/layout_sample8.png" height="480">
 
-    <img src="./images/layout_sample8.png" height="480">
 
 ### Referencias :
 
