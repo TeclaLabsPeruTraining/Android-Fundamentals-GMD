@@ -98,7 +98,7 @@ Padding
   
 - LinearLayout
     
-  ![img][linearlayout]
+  ![img]([linearlayout] | width=100)
 
 - RelativeLayout
     
@@ -158,7 +158,7 @@ Padding
 
 [path]: images/
 
-[linearlayout]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout.png | width=100
+[linearlayout]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout.png
 
 [relativelayout]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/relativelayout.png 
 
