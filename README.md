@@ -158,7 +158,7 @@ Padding
 
 [path]: images/
 
-[linearlayout]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout.png "height=480px"
+[linearlayout]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout.png height="480px"
 
 [relativelayout]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/relativelayout.png "height=480px"
 
