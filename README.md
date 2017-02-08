@@ -98,9 +98,7 @@ Padding
   
 - LinearLayout
     
-  <div style="width: 200px;">
-    ![img][linearlayout]
-  </div>
+  ![img][linearlayout]{:width="36px"}
   
 - RelativeLayout
     
@@ -172,8 +170,4 @@ Padding
 
 [linearlayouthorzsample]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_horz_sample.png
 
-img[alt="minipic"] { 
-  max-width:  20px; 
-  display: block;
-}
 
