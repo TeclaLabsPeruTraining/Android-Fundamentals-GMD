@@ -112,8 +112,6 @@ Padding
 
 ### Ejemplos
 
-### Ejemplos
-
 - LinearLayout
     
     <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_sample.png" height="480">
