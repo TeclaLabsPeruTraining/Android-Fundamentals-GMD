@@ -154,7 +154,7 @@ Padding
    
 - [http://android.inspired-ui.com/](http://android.inspired-ui.com/)
 
-<!--[path]: images/
+<!-- [path]: images/
 
 [linearlayout]: ./images/linearlayout.png
 
@@ -170,5 +170,5 @@ Padding
 
 [linearlayout_weight_ver_sample]: .images/linearlayout_weight_ver_sample.png
 
-[linearlayout_weight_hor_sample.png]: ./images/linearlayout_weight_hor_sample.png-->
+[linearlayout_weight_hor_sample.png]: ./images/linearlayout_weight_hor_sample.png -->
 
