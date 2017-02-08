@@ -158,7 +158,7 @@ Padding
 
 [path]: images/
 
-[linearlayout]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout.png
+[linearlayout]: (https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout.png)
 
 [relativelayout]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/relativelayout.png 
 
@@ -170,10 +170,10 @@ Padding
 
 [linearlayouthorzsample]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_horz_sample.png
 
-
-.classname{
+<style type="text/css">
+    .classname{
         width: 200px;
     }
-
+</style>
 
 
