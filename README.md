@@ -102,20 +102,21 @@ Padding
 
 - RelativeLayout
     
-    <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/relativelayout.png" height="480">
+  ![img][relativelayout]
          
 - Listview, GridView , RecyclerView
     
-    <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/listview.png" height="480">
-    
-    <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/gridview.png" height="480">
+  ![img][listview]
+  
+  ![img][gridview]
 
 ### Ejemplos
 
 - LinearLayout
     
-    <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_sample.png" height="480">
-    <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_horz_sample.png" height="480">
+  ![img][linearlayoutsample]
+  
+  ![img][linearlayouthorzsample]
     
     <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_weight_ver_sample.png" height="480">
     <img src="https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_weight_hor_sample.png" height="480">
@@ -158,3 +159,15 @@ Padding
 [path]: images/
 
 [linearlayout]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout.png "height=480px"
+
+[relativelayout]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/relativelayout.png "height=480px"
+
+[listview]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/listview.png "height=480px"
+
+[gridview]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/gridview.png "height=480px"
+
+[linearlayoutsample]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_sample.png "height=480px"
+
+[linearlayouthorzsample]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout_horz_sample.png "height=480px"
+
+
