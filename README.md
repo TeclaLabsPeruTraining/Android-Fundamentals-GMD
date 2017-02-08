@@ -38,7 +38,7 @@ Android Fundamentals (23h)
     
     * Verificar el ciclo de vida de una actividad.
 
-    <img src=[google] height="480">
+   ![imagen][google]
     
  
 ### 3. Android Manifest
