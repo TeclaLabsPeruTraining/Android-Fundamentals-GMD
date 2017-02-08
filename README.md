@@ -89,4 +89,4 @@ Android Fundamentals (23h)
 
 - Intents [https://developer.android.com/guide/components/intents-filters.html?hl=es](https://developer.android.com/guide/components/intents-filters.html?hl=es)
 
-[google] : https://developer.android.com/guide/components/images/activity_lifecycle.png
+[google]: https://developer.android.com/guide/components/images/activity_lifecycle.png
