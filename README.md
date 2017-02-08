@@ -98,7 +98,7 @@ Padding
   
 - LinearLayout
     
-  ![img]([linearlayout] | width=100)
+  ![img](linearlayout | width=100)
 
 - RelativeLayout
     
