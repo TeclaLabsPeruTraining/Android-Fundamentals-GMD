@@ -37,6 +37,9 @@ Android Fundamentals (23h)
 - Actividades
     
     * Verificar el ciclo de vida de una actividad.
+
+    <img src="[google]activity_lifecycle.png" height="480">
+    
  
 ### 3. Android Manifest
 
@@ -86,3 +89,4 @@ Android Fundamentals (23h)
 
 - Intents [https://developer.android.com/guide/components/intents-filters.html?hl=es](https://developer.android.com/guide/components/intents-filters.html?hl=es)
 
+[google] : https://developer.android.com/guide/components/images/
