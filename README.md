@@ -155,5 +155,6 @@ Padding
    
 - [http://android.inspired-ui.com/](http://android.inspired-ui.com/)
 
-[path]:images/
-[linearlayout]:https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout.png height=480px
+[path]: images/
+
+[linearlayout]: https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4/images/linearlayout.png height=480px
