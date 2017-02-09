@@ -15,11 +15,11 @@ Android Fundamentals (23h)
 
 - Activity, Services, Broadcast Receiver, Content Providers
 
- - Ciclo de vida de una aplicación. (Actividades y el “stack”)
+- Ciclo de vida de una aplicación. (Actividades y el “stack”)
  
- - Que es un Intent y un Bundle
+- Que es un Intent y un Bundle
  
- - Archivo Manifest
+- Archivo Manifest
  
 ### Layout y Widgets
 
