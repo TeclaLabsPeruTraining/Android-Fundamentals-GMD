@@ -1,6 +1,12 @@
 # Android-Fundamentals-GMD
 Android Fundamentals (23h)
 
+## Instructores
+
+- Eduardo Medina emedinaa@gmail.com
+
+- Pablo Jhonson
+
 ## Temario : 
 
 ### Fundamentos 
