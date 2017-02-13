@@ -5,14 +5,11 @@ Android Fundamentals (23h)
 
 ### Temas :
 
-- Controles de selección 
+- [Controles de selección](https://github.com/TeclaLabsPeruTraining/Android-Fundamentals-GMD/blob/Lesson4/controlesSeleccion.md) 
 
-- RecyclerView
+- [List Views y Custom Adapters](https://github.com/TeclaLabsPeruTraining/Android-Fundamentals-GMD/blob/Lesson4/ListasyAdapters.md)
 
-- Uso de Adapters
+- [RecyclerView y CardView](https://github.com/TeclaLabsPeruTraining/Android-Fundamentals-GMD/blob/Lesson4/RecyclerView&CardView.md)
 
-- Uso de CardView
-
-- Custom Adapters
 
 ### Referencias :
