@@ -1,7 +1,5 @@
-# Android-Fundamentals
-Android Fundamentals (20h)
 
-## Eventos de Usuario (2h)
+## Controles de Seleccion - Eventos de Usuario 
 Eventos centrados en el objeto `View`  
 
 ### View Events
