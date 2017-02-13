@@ -4,7 +4,7 @@ Android Fundamentals (20h)
 ##Basic Adapters
     
  Cuando queremos mostrar una lista en Android solemos usar el componente `ListView`*. Ademas de este componente es necesario usar un `Adapter` para que sirva de intermediario entre nuestra fuente de datos y nuestro `AdapterView` que en este caso seria nuestra `ListView`. En el siguiente grafico podemos observar como es el flujo entre estos componentes.
- ![DataSource-Adapter-List Flow](https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson5/images/Adapter1.jpg)
+ ![DataSource-Adapter-List Flow](https://github.com/TeclaLabsPeruTraining/Android-Fundamentals-GMD/blob/Lesson4/images/Adapter1.jpg)
 
 Como se ve en la imagen, el adapter se encuentra en medio de la fuente de datos (un `List` o `Cursor`) y nuestra ListView (o algun otro AdapterView) y se encarga de manejar el array que tendra la data a mostrar y convertir cada item de este array en su correspondiente View.
 
@@ -15,7 +15,7 @@ Como se ve en la imagen, el adapter se encuentra en medio de la fuente de datos 
 Cuando tenemos una `ListView` conectada a un `Adapter`, el adapter instanciará filas hasta que la `ListView` haya sido llenada con suficientes items para llenar el alto de la lista. Luego de eso no se creará más items en memoria.
 Cuando el usuario haga scroll en la lista, los items que dejen la pantalla serán guardados en memoria para su uso mas adelante y cada fila nueva que aparezca en la pantalla reutilizará una vieja que ha sido guardada en memoria.
 En el siguiente gráfico se puede visualizar como es el flujo de manejo de las vistas.
-![Adapter View Management](https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson5/images/adapterViewManagement.png)
+![Adapter View Management](https://github.com/TeclaLabsPeruTraining/Android-Fundamentals-GMD/blob/Lesson4/images/adapterViewManagement.png)
 
 ###Tipos de Adapters
 El SDK de android nos provee de distintos tipos de adapters
