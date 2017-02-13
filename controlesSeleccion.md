@@ -150,6 +150,10 @@ Tip: Usar regex para validar los campos.
 Imagen referencial: 
 ![imagen ejercicio](https://github.com/BelatrixTraining/Android-Fundamentals/blob/Lesson4-2/images/ejercicio.jpg)
 
+TIP: Reg-Ex para validar el password con las condiciones dadas
+	"^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[$@$!%*?&])[A-Za-z\\d$@$!%*?&]{8,}"
+Para el caso del mail podemos utilizar
+	android.util.Patterns.EMAIL_ADDRESS
 ## Referencias
 
  * <http://developer.android.com/reference/android/widget/Button.html>
