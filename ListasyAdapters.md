@@ -1,6 +1,4 @@
-# Android-Fundamentals
-Android Fundamentals (20h)
-    
+ 
 ##Basic Adapters
     
  Cuando queremos mostrar una lista en Android solemos usar el componente `ListView`*. Ademas de este componente es necesario usar un `Adapter` para que sirva de intermediario entre nuestra fuente de datos y nuestro `AdapterView` que en este caso seria nuestra `ListView`. En el siguiente grafico podemos observar como es el flujo entre estos componentes.
