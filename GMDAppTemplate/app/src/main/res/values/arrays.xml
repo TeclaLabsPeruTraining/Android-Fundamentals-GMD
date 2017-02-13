@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="examples">
+        <item>BaseAdapter</item>
+        <item>ArrayAdapter</item>
+        <item>SimpleAdapter</item>
+        <item>CursorAdapter</item>
+        <item>ViewHolder</item>
+        <item>Spinner</item>
+    </string-array>
+
+    <string-array name="activities">
+        <item>.baseadapter.BaseAdapterActivity</item>
+        <item>.arrayAdapter.ArrayAdapterActivity</item>
+        <item>.simpleadapter.SimpleAdapterActivity</item>
+        <item>.cursoradapter.CursorAdapterActivity</item>
+        <item>.viewholder.ViewHolderActivity</item>
+        <item>.spinner.SpinnerActivity</item>
+    </string-array>
+
+    <string-array name="lorem">
+        <item>uno</item>
+        <item>dos</item>
+        <item>tres</item>
+        <item>cuatro</item>
+        <item>cinco</item>
+        <item>seis</item>
+        <item>siete</item>
+        <item>ocho</item>
+        <item>nueve</item>
+        <item>diez</item>
+        <item>once</item>
+        <item>doce</item>
+        <item>trece</item>
+        <item>catorce</item>
+    </string-array>
+    <string-array name="countries">
+        <item>Peru</item>
+        <item>Argentina</item>
+        <item>Bolivia</item>
+        <item>Chile</item>
+        <item>Ecuador</item>
+        <item>Brazil</item>
+        <item>Colombia</item>
+        <item>Venezuela</item>
+        <item>Uruguay</item>
+        <item>Paraguay</item>
+    </string-array>
+    <string-array name="capitals">
+        <item>Lima</item>
+        <item>Buenos Aires</item>
+        <item>Sucre</item>
+        <item>Santiago</item>
+        <item>Quito</item>
+        <item>Brasilia</item>
+        <item>Bogota</item>
+        <item>Caracas</item>
+        <item>Montevideo</item>
+        <item>Asuncion</item>
+    </string-array>
+</resources>

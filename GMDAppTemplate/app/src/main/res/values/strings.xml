@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">GMDAppTemplate</string>
+    <string name="app_name">Lesson4</string>
+    <string name="baseAdapterTitle">Base Adapter Example</string>
+    <string name="viewHolderTitle">View Holder Example</string>
+    <string name="arrayAdapterTitle">Array Adapter Example</string>
+    <string name="cursorAdapterTitle">Cursor Adapter Example</string>
+    <string name="simpleAdapterTitle">Simple Adapter Example</string>
 </resources>
