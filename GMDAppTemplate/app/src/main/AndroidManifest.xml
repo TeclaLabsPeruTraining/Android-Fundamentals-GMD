@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gmd.lessons">
+
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
 
@@ -23,6 +24,11 @@
         <activity android:name=".cursoradapter.CursorAdapterActivity" />
         <activity android:name=".simpleadapter.SimpleAdapterActivity" />
         <activity android:name=".spinner.SpinnerActivity" />
+        <activity
+            android:name=".baseadapter.EjemploActivity"
+            android:label="@string/title_activity_ejemplo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".recyclerview.RecyclerViewActivity"></activity>
     </application>
 
 </manifest>

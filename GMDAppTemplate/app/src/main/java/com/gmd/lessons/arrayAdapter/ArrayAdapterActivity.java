@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -21,12 +22,15 @@ public class ArrayAdapterActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adapter);
+
         View headerView = getLayoutInflater().inflate(R.layout.header_title, null);
         ((TextView) headerView.findViewById(R.id.headerTitle)).setText(R.string.arrayAdapterTitle);
-        ListView arrayAdapterListView = (ListView) findViewById(R.id.listview);
-        arrayAdapterListView.addHeaderView(headerView);
-        arrayAdapterListView.setAdapter(new ArrayAdapterExample(this, R.layout.item_adapter, R.id.text,
-                Arrays.asList(getResources().getStringArray(R.array.lorem))));
+
+        ListView listView = (ListView) findViewById(R.id.listview);
+        listView.addHeaderView(headerView);
+        ArrayAdapter arrayAdapter = new ArrayAdapterExample(this, R.layout.item_adapter, R.id.text,
+                Arrays.asList(getResources().getStringArray(R.array.lorem)));
+        listView.setAdapter(arrayAdapter);
 
     }
 }

@@ -7,6 +7,7 @@
         <item>CursorAdapter</item>
         <item>ViewHolder</item>
         <item>Spinner</item>
+        <item>RecyclerView</item>
     </string-array>
 
     <string-array name="activities">
@@ -16,6 +17,7 @@
         <item>.cursoradapter.CursorAdapterActivity</item>
         <item>.viewholder.ViewHolderActivity</item>
         <item>.spinner.SpinnerActivity</item>
+        <item>.recyclerview.RecyclerViewActivity</item>
     </string-array>
 
     <string-array name="lorem">

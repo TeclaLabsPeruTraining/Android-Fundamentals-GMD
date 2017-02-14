@@ -5,4 +5,5 @@
     <string name="arrayAdapterTitle">Array Adapter Example</string>
     <string name="cursorAdapterTitle">Cursor Adapter Example</string>
     <string name="simpleAdapterTitle">Simple Adapter Example</string>
+    <string name="title_activity_ejemplo">EjemploActivity</string>
 </resources>
