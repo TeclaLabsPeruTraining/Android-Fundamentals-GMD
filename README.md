@@ -55,3 +55,6 @@ En este ejemplo vamos a agregar y remover fragments dinámicamente.
  
 ## Referencias :
 
+- Dynamic UI with Fragments [https://developer.android.com/training/basics/fragments/index.html](https://developer.android.com/training/basics/fragments/index.html)
+
+- Fragmens [https://developer.android.com/guide/components/fragments.html](https://developer.android.com/guide/components/fragments.html)
