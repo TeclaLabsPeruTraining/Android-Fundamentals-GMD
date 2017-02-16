@@ -138,7 +138,6 @@ En el método "onClick" es donde recibimos las acciones del evento
   - Navegación y validación de un formulario de registro de usuario .
   
   <img src="./Exercises/SkypeSplash.jpeg" height="480">
-  
   <img src="./Exercises/SkypeLogIn.jpeg" height="480">
   
   <img src="/Exercises/SkypeSignUp.jpeg" height="480">
