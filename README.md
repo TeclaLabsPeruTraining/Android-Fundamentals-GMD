@@ -5,7 +5,7 @@ Android Fundamentals (23h)
 
 - Eduardo Medina emedinaa@gmail.com
 
-- Pablo Jhonson
+- Pablo Jhonson pablo.88j@gmail.com
 
 ## Temario : 
 
