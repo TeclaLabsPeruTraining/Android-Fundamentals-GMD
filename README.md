@@ -7,6 +7,12 @@ Android Fundamentals (23h)
 
 - Eventos de Click
 
+- Eventos de Selección
+
+- Eventos de teclado
+
+## 1. Eventos de Click
+
 Lo primero es instanciar en variables los elementos de la UI a los cuales le agregaremos el evento de click
 
 ```java
@@ -60,7 +66,7 @@ En el método "onClick" es donde recibimos las acciones del evento
     }
 ```
 
-- Eventos de Selección
+## 2. Eventos de Selección
 
 ```java
     private void ui() {
@@ -85,7 +91,7 @@ En el método "onClick" es donde recibimos las acciones del evento
     }
 ```
 
-- Eventos de teclado
+## 3. Eventos de teclado
 
 ```java
         //events
@@ -123,7 +129,20 @@ En el método "onClick" es donde recibimos las acciones del evento
             }
         });
 ```
+## Ejercicios :
 
+  - Validación de un formulario de autenticación.
+  
+  <img src="./Exercises/LogInInstagram.jpeg" height="480">
+  
+  - Navegación y validación de un formulario de registro de usuario .
+  
+  <img src="./Exercises/SkypeSplash.jpeg" height="480">
+  
+  <img src="./Exercises/SkypeLogIn.jpeg" height="480">
+  
+  <img src="/Exercises/SkypeSignUp.jpeg" height="480">
+  
 ## Referencias :
 
 - Input Events [https://developer.android.com/guide/topics/ui/ui-events.html?hl=es](https://developer.android.com/guide/topics/ui/ui-events.html?hl=es)
