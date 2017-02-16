@@ -13,3 +13,7 @@ Android Fundamentals (23h)
 
 
 ### Referencias :
+
+- RecyclerView [https://developer.android.com/guide/topics/ui/layout/recyclerview.html](https://developer.android.com/guide/topics/ui/layout/recyclerview.html)
+
+- ListView [https://developer.android.com/guide/topics/ui/layout/listview.html](https://developer.android.com/guide/topics/ui/layout/listview.html)
