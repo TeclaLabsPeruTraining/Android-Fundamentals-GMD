@@ -126,3 +126,5 @@ En el método "onClick" es donde recibimos las acciones del evento
 
 ## Referencias :
 
+- Input Events [https://developer.android.com/guide/topics/ui/ui-events.html?hl=es](https://developer.android.com/guide/topics/ui/ui-events.html?hl=es)
+
