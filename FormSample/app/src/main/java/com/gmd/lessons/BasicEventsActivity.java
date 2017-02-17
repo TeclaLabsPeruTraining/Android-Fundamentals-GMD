@@ -30,6 +30,7 @@ public class BasicEventsActivity extends Activity implements View.OnClickListene
         flay= (FrameLayout) findViewById(R.id.flay);
         tvi= (TextView) findViewById(R.id.tvi);
 
+        //events
         btn.setOnClickListener(this);
         ivi.setOnClickListener(this);
         flay.setOnClickListener(this);

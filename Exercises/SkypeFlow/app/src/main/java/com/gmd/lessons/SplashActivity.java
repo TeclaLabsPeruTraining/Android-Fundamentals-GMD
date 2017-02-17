@@ -9,7 +9,7 @@ import java.util.TimerTask;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private final int SPLASH_TIME=2000;
+    private final int SPLASH_TIME=3000;
     private Timer timer;
 
     @Override

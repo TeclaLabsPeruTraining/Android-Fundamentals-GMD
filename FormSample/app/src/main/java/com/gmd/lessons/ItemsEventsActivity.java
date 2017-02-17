@@ -8,7 +8,8 @@ import android.widget.AdapterView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class ItemsEventsActivity extends Activity {
+public class ItemsEventsActivity extends Activity
+implements AdapterView.OnItemSelectedListener{
 
     private Spinner spLocation;
     private String localidad;
@@ -22,15 +23,20 @@ public class ItemsEventsActivity extends Activity {
 
     private void ui() {
         spLocation =(Spinner)findViewById(R.id.spLocation);
-
+        spLocation.setTag(null);
 
         spLocation.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                Log.v("CONSOLE", "spLocation" + adapterView.getAdapter().getItem(i));
-                localidad = adapterView.getAdapter().getItem(i).toString();
-                Toast.makeText(ItemsEventsActivity.this,
-                        "Item seleccionado "+localidad,Toast.LENGTH_SHORT).show();
+            public void onItemSelected(AdapterView<?> adapterView, View view,
+                                       int position, long l) {
+                if(spLocation.getTag()==null){
+                    spLocation.setTag("Lo que sea");
+                }else{
+                    Log.v("CONSOLE", "spLocation" + adapterView.getAdapter().getItem(position));
+                    localidad = adapterView.getAdapter().getItem(position).toString();
+                    Toast.makeText(ItemsEventsActivity.this,
+                            "Item seleccionado "+localidad,Toast.LENGTH_SHORT).show();
+                }
             }
 
             @Override
@@ -38,6 +44,16 @@ public class ItemsEventsActivity extends Activity {
 
             }
         });
+
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
 
     }
 }

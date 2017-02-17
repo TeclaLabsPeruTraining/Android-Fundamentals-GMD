@@ -15,10 +15,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BasicEventsActivity"/>
-        <activity android:name=".FormularioActivity"/>
-        <activity android:name=".ItemsEventsActivity"/>
-        <activity android:name=".KeyboardEventsActivity"/>
+        <activity android:name=".BasicEventsActivity" />
+        <activity android:name=".FormularioActivity" />
+        <activity android:name=".ItemsEventsActivity" />
+        <activity android:name=".KeyboardEventsActivity" />
+        <activity android:name=".Main2Activity">
+
+        </activity>
     </application>
 
 </manifest>

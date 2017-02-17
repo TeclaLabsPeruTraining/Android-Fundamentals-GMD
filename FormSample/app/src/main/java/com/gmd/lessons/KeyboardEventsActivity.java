@@ -104,6 +104,7 @@ public class KeyboardEventsActivity extends Activity {
     }
 
     private void send() {
+
         Toast.makeText(this, "Send server... ",Toast.LENGTH_SHORT).show();
     }
 }

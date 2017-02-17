@@ -25,7 +25,9 @@ import android.widget.Toast;
 public class FormularioActivity extends Activity {
 
 	private TextView txtfecnac;
-	private EditText eteName,eteLastname,etePassword,eteEmail,eteUsername;
+	private EditText eteName,eteLastname,
+            etePassword,eteEmail,
+            eteUsername;
     private Spinner spLocation;
     private RadioGroup rbGenero;
     private CheckBox chkNotification;
@@ -75,6 +77,7 @@ public class FormularioActivity extends Activity {
         btnSignUp.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 if(validateFormError())
                 {
                     Toast.makeText(FormularioActivity.this, "Enviar al servidor...",
@@ -157,15 +160,18 @@ public class FormularioActivity extends Activity {
         if(name.isEmpty())
         {
             eteName.setError("Campo inválido");
+            Log.v("CONSOLE", "name");
             return false;
         }
         if(lastName.isEmpty())
         {
+            Log.v("CONSOLE", "lastname");
             eteLastname.setError("Campo inválido");
             return false;
         }
         if(usernmame.isEmpty())
         {
+            Log.v("CONSOLE", "username");
             eteUsername.setError("Campo inválido");
             return false;
         }
