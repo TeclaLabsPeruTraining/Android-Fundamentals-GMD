@@ -88,9 +88,11 @@ public class AFragment extends Fragment {
 }
 ```
 
+<img src="./images/fragments.png" height="480">
+
 - Ciclo de Vida
 
-<img src="./images/fragments.png" height="480">
+<img src="./images/fragment_lifecycle.png" height="480">
 
 - Interfaz de Usuario
 
