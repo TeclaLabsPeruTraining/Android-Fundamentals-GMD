@@ -16,6 +16,17 @@ Android Fundamentals (23h)
 ### Fundamentos 
 
 - ¿Qué es un Fragmento?
+
+    * Es un componente o módulo independiente con diseño (XML) y código(java).
+    
+    * Tiene sus propio ciclo de vida.
+    
+    * No se debe registrar en el AndroidManifest.
+    
+    * Se pueden agregar múltiples fragments a un vista(Activity).
+    
+    * Requieren de un actividad
+    
 ```java
 
 public class AFragment extends Fragment {
