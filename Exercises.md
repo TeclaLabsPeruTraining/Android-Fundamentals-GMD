@@ -2,30 +2,8 @@
 Android Fundamentals (23h)
 
 ### Lesson 6 : Fragments(4h)
-
-## Temas :
-
-- Fragments
-
-- Comunicación entre componentes
-
-- Ejercicios
-
-## 1. Fragments
-
-## 2. Comunicación entre componentes
-
-## 3. Ejercicios
-
-### Ejemplos sobre fragments donde trataremos los siguientes puntos :
-
-  * Agregar Fragments mediante XML
      
-  * Agregar y remover Fragments dinámicamente
-     
-  * Comunicación entre Fragments 
-     
-### Ejemplos 
+###  Ejercicios 
 
 - Ejemplo 1
 
