@@ -92,7 +92,7 @@ public class AFragment extends Fragment {
 
 - Ciclo de Vida
 
-<img src="./images/fragment_lifecycle.png" height="480">
+<img src="./images/fragment_lifecycle.png">
 
 - Interfaz de Usuario
 
@@ -177,7 +177,57 @@ public class AFragment extends Fragment {
 
 ## 2. Comunicación entre fragments
 
+```java
+public interface OnMessageListener {
 
+    void recibiryEnviardesdeFragment(String message);
+}
+```
+
+```java
+ @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        if (context instanceof OnMessageListener) {
+            mListener = (OnMessageListener) context;
+        } else {
+            throw new RuntimeException(context.toString()
+                    + " must implement OnMessageListener");
+        }
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        mListener = null;
+    }
+```
+
+```java
+
+public class CommunicatingFragmentActivity extends AppCompatActivity implements OnMessageListener{
+
+    private AddMessageFragment addMessageFragment;
+    private MessagesFragment messagesFragment;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_communicating_fragment);
+        ui();
+    }
+
+    private void ui() {
+        addMessageFragment= (AddMessageFragment) getSupportFragmentManager().findFragmentById(R.id.fragmentAddMessage);
+        messagesFragment= (MessagesFragment) getSupportFragmentManager().findFragmentById(R.id.fragmentMessages);
+    }
+
+    @Override
+    public void recibiryEnviardesdeFragment(String message) {
+        messagesFragment.mostrarMensaje(message);
+    }
+}
+```
 ### Ejemplos sobre fragments donde trataremos los siguientes puntos :
 
   * Agregar Fragments mediante XML.
