@@ -30,7 +30,7 @@ Android Fundamentals (23h)
   
 ### Ejercicios 
 
-  * Ejercicios sobre Fragments [./Exercises.md](./Exercises.md); 
+  * Ejercicios sobre Fragments [Link](./Exercises.md); 
  
 ## Referencias :
 
