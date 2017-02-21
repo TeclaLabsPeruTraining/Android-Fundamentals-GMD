@@ -7,6 +7,3 @@ Android Fundamentals (23h)
 
 - Introducción a Material Design
 - Presentación de Proyectos I - Martes 21 de Febrero
-
-## Referencias :
-
