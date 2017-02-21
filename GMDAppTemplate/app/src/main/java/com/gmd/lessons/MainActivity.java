@@ -26,5 +26,13 @@ public class MainActivity extends AppCompatActivity {
                                 .makeSceneTransitionAnimation(MainActivity.this).toBundle());
             }
         });
+
+        findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, PaletteActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
