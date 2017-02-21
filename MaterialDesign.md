@@ -25,7 +25,6 @@ Si se desea personalizar la paleta de colores del tema es necesario modificar lo
   <!-- Hereda de material theme -->
   <style name="AppTheme" parent="android:Theme.Material">
     <!-- Color principal del tema -->
-    <!--   your app branding color for the app bar -->
     <item name="android:colorPrimary">@color/primary</item>
     <!--   Variante oscura para el colo del status bar-->
     <item name="android:colorPrimaryDark">@color/primary_dark</item>
@@ -36,6 +35,25 @@ Si se desea personalizar la paleta de colores del tema es necesario modificar lo
 ```
 
 ![ThemeColors](https://github.com/TeclaLabsPeruTraining/Android-Fundamentals-GMD/blob/Lesson7/images/ThemeColors.png)
+
+##Widgets nuevos
+Android brinda dos widgets nuevos para mostrar listas, grillas y tarjetas con estilo y animaciones de Material Design: `RecyclerView` y `CardView`
+
+![RecyclerView](https://github.com/TeclaLabsPeruTraining/Android-Fundamentals-GMD/blob/Lesson7/images/list_mail.png)
+Recycler View
+
+![CardView](https://github.com/TeclaLabsPeruTraining/Android-Fundamentals-GMD/blob/Lesson7/images/card_travel.png)
+
+##Animaciones
+La nueva API de animaciones permite crear animaciones personalizadas para la información táctil de los controles de UI. Además realizo cambios en el estado de las vistas y transiciones entre actividades. Esta API permite hacer lo siguiente:
+
+ - Responder a los eventos tactiles de las vistas mediante animaciones de información táctil.
+ - Mostrar y ocultar vistas con efecto circular.
+ - Transiciones de actividades.
+ - Crear animaciones con movimiento curvo.
+ - Animar cambios en una o más propiedades de las vistas.
+
+
 ##Referencias:
 
  - https://developer.android.com/design/material/index.html?hl=es
