@@ -11,9 +11,29 @@
     tools:context="com.gmd.lessons.MainActivity">
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:src="@mipmap/ic_logo_gmd"/>
+        android:src="@mipmap/ic_logo_gmd" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Clickeame!" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:text="Clickeame a mi también!" />
 
 </RelativeLayout>
