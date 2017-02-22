@@ -18,9 +18,9 @@ public class PaletteActivity extends AppCompatActivity {
         setContentView(R.layout.activity_palette);
 
         ImageView teamImage = (ImageView) findViewById(R.id.teamImage);
-        teamImage.setImageDrawable(getDrawable(R.drawable.realmadrid));
+        teamImage.setImageDrawable(getDrawable(R.drawable.barcelona));
         Bitmap barcelona = BitmapFactory.decodeResource(getResources(),
-                R.drawable.realmadrid);
+                R.drawable.barcelona);
 
         // Asynchronous
         Palette.from(barcelona).generate(new Palette.PaletteAsyncListener() {
